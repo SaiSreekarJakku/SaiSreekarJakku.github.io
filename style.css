@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: #333;
+    margin: 0px;
+    padding: 190px;
+    border:  30px solid green; 
+}
+
+h1 {
+    color: navy;
+}
+
+.section1 {
+    background-color: #ffcccb; 
+    color: darkblue;
+}
+
+.section2 {
+    background-color: #90EE90; 
+    color: darkred;
+}
