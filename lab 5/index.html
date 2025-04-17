@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Good Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="tip-form">
+    <h1>Tip Calculator</h1>
+
+    <label for="billTotal">Bill Total ($):</label>
+    <input type="text" id="billTotal" placeholder="Enter bill amount" />
+
+    <label for="tipSlider">Tip Percentage:</label>
+    <input type="range" id="tipSlider" min="0" max="100" value="15" />
+
+    <label for="tipPercent">Tip %:</label>
+    <input type="text" id="tipPercent" disabled />
+
+    <label for="tipAmount">Tip Amount ($):</label>
+    <input type="text" id="tipAmount" disabled />
+
+    <label for="totalWithTip">Total with Tip ($):</label>
+    <input type="text" id="totalWithTip" disabled />
+
+    <label for="totalWithTax">Total with Tax (11%) ($):</label>
+    <input type="text" id="totalWithTax" disabled />
+
+    <!-- Extra Credit -->
+    <label for="currency">Convert To:</label>
+    <select id="currency">
+      <option value="">-- Select Currency --</option>
+      <option value="inr">Indian Rupee</option>
+      <option value="eur">Euro</option>
+    </select>
+    <p id="convertedTotal"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
