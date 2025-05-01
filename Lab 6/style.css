@@ -1,0 +1,147 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header, footer {
+    background: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  main {
+    flex: 1;
+    max-width: 960px;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  
+  /* Controls Section */
+  #location-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  select, button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #2563eb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover, select:hover {
+    background-color: #e0e7ff;
+    border-color: #1e3a8a;
+  }
+  
+  /* Results Section */
+  #results {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    min-height: 250px;
+    transition: all 0.3s ease;
+  }
+  
+  #results h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: #1e293b;
+  }
+  
+  #results ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  #results li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #results li i {
+    margin-right: 10px;
+    color: #0ea5e9;
+  }
+  
+  /* Result Sections */
+  .result-group {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .result-today {
+    background-color: #e0f2fe;
+    border-left: 5px solid #38bdf8;
+  }
+  
+  .result-tomorrow {
+    background-color: #fef9c3;
+    border-left: 5px solid #fde047;
+  }
+  
+  /* Placeholder, Loading, and Errors */
+  #results p {
+    font-style: italic;
+    text-align: center;
+    color: #64748b;
+  }
+  
+  .loading {
+    color: #0ea5e9;
+  }
+  
+  .error {
+    color: #dc2626;
+    font-weight: bold;
+  }
+  
+  /* Fade-in Effect */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #location-controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    select, button {
+      width: 100%;
+    }
+  }
+  

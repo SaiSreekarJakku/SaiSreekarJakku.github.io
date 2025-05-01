@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunrise & Sunset Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <h1>Sunrise & Sunset Dashboard</h1>
+  </header>
+
+  <main id="dashboard">
+    <!-- Controls -->
+    <section id="location-controls">
+      <label for="location-select">Choose a location:</label>
+      <select id="location-select">
+        <option value="">--Select a location--</option>
+        <option value="" disabled selected>--Select a location--</option>
+        <option data-lat="40.7128" data-lng="-74.0060">New York, USA</option>
+        <option data-lat="34.0522" data-lng="-118.2437">Los Angeles, USA</option>
+        <option data-lat="41.8781" data-lng="-87.6298">Chicago, USA</option>
+        <option data-lat="51.5074" data-lng="-0.1278">London, UK</option>
+        <option data-lat="35.6895" data-lng="139.6917">Tokyo, Japan</option>
+        <option data-lat="-33.8688" data-lng="151.2093">Sydney, Australia</option>
+        <option data-lat="48.8566" data-lng="2.3522">Paris, France</option>
+        <option data-lat="55.7558" data-lng="37.6173">Moscow, Russia</option>
+        <option data-lat="28.6139" data-lng="77.2090">New Delhi, India</option>
+        <option data-lat="-23.5505" data-lng="-46.6333">São Paulo, Brazil</option>
+        
+      </select>
+      <button id="use-current-location">Use My Location</button>
+    </section>
+
+    <!-- Results placeholder -->
+    <section id="results">
+        <p>Choose a location or use your current location to see sunrise and sunset information for today and tomorrow.</p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Data provided by <a href="https://sunrisesunset.io/" target="_blank">SunriseSunset.io</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
